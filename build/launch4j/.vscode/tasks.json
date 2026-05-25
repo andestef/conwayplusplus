@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb77724461ef8ad94e2cf17e5fef1e3a4308a5ab8b482b6a4634911f1c09ac7a
-size 288
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "make",
+			"targetName": "all",
+			"makeFileRelativePath": "head_src\\makefile",
+			"problemMatcher": [],
+			"label": "make: all",
+			"detail": "./head_src\\makefile",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}

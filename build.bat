@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3458a5c7bd4dcb6bcd0da4564c2b38506edd8ea743ddb145f21a9e000cc1388c
-size 409
+::remove next line to debug this batch file
+@echo off
+cd src
+"../build/jdk/bin/javac" Conwayplusplus.java --module-path ../build/javafx/lib --add-modules javafx.controls -d ../build
+cd ../build
+del "conwayplusplus.exe"
+"jdk/bin/jar" cfm Conwayplusplus.jar manifest.txt *.class
+"launch4j/launch4jc" conf.xml
+del "Conwayplusplus.class"
+del "Conwayplusplus$1.class"
+del "Conwayplusplus.jar"
+conwayplusplus
+cd ../

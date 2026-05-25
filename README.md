@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7e2ef7432beb6f68523929790e6727f6df04a22bc60bd6dc513600503f727b55
-size 181
+# Conway++
+## Build Reqs
+[JDK 26](https://download.oracle.com/java/26/latest/jdk-26_windows-x64_bin.exe)
+[launch4j](https://sourceforge.net/projects/launch4j/files/launch4j-3/3.50/)

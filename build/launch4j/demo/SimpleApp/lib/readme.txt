@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1416728d7fed224a0aff81ba12cc82ce2e59ed4789f9138422d34a76881e020e
-size 252
+Put your jar libs here and the build script will include them
+in the classpath stored inside the jar manifest.
+In order to run your application move the output exe file from
+the dist directory to the same level as lib. 
+
+SimpleApp.exe
+lib/
+lib/xml.jar

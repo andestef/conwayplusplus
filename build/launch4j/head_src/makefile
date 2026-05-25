@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ec50e253dede1ffe5b990b25cc03c5cfbfcbdba2fb1a05e178ce78b5826c9a64
-size 419
+MAKE      = mingw32-make.exe
+
+all:
+	$(MAKE) -C guihead -f Makefile.win all
+	$(MAKE) -C consolehead -f Makefile.win all
+	$(MAKE) -C jniguihead_BETA -f Makefile.win all
+	$(MAKE) -C jniconsolehead_BETA -f Makefile.win all
+
+clean:
+	$(MAKE) -C guihead -f Makefile.win clean
+	$(MAKE) -C consolehead -f Makefile.win clean
+	$(MAKE) -C jniguihead_BETA -f Makefile.win clean
+	$(MAKE) -C jniconsolehead_BETA -f Makefile.win clean

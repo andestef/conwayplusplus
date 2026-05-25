@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c4c3dc0e23873994f49d879f0d59ea55fbf55a56f2d48043544861e5e3399f0
-size 261
+@echo off
+if not "%1" == "" (
+  echo Creating self-signed test certificate...
+  "c:\Program Files\Java\jre-10.0.1\bin\keytool.exe" -genkeypair -alias "%1" -keyalg RSA -keystore keystore.jks
+) else (
+  echo Specify alias/domain as the first and only argument.
+)

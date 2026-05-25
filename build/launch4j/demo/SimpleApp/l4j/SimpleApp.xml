@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:689a134702b3fee7746434369702ac0859d7e7076fd5cf805e44870494ba8527
-size 523
+<launch4jConfig>
+  <headerType>gui</headerType>
+  <jar>SimpleApp.jar</jar>
+  <dontWrapJar>true</dontWrapJar>
+  <outfile>../SimpleApp.exe</outfile>
+  <errTitle>SimpleApp</errTitle>
+  <chdir>.</chdir>
+  <icon>SimpleApp.ico</icon>
+  <restartOnCrash>true</restartOnCrash>
+  <jre>
+  	<path>%JAVA_HOME%;%PATH%</path>
+    <minVersion>1.8.0</minVersion>
+  </jre>
+  <splash>
+    <file>splash.bmp</file>
+    <waitForWindow>true</waitForWindow>
+    <timeout>60</timeout>
+    <timeoutErr>true</timeoutErr>
+  </splash>
+</launch4jConfig>

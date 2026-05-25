@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c1eaa3cb0493181dd443d47ec66fec1949659d8dd0e7bd8edb84a4dd3cdf8139
-size 360
+@echo off
+if "%1" == "" goto HELP
+if "%2" == "" goto HELP
+if "%3" == "" goto HELP
+
+rem
+rem See sign4j.README.txt and https://ebourg.github.io/jsign/ for more information.
+rem 
+
+sign4j.exe java -jar jsign-2.0.jar --alias "%1" --keystore keystore.jks --storepass "%2" "%3"
+goto END
+
+:HELP
+echo Usage: sign.bat certificate-alias store-password filename.exe
+
+:END

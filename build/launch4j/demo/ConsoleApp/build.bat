@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:165ef159b5895c27652cfb30b2ef0b3dcb696700d55d5989ee6d92e309793db5
-size 258
+@echo off
+if "%ANT_HOME%"=="" goto noAntHome
+if "%JAVA_HOME%"=="" goto noJavaHome
+call "%ANT_HOME%\bin\ant.bat" exe
+goto end
+
+:noAntHome
+echo ANT_HOME environment variable is not set
+goto end
+
+:noJavaHome
+echo JAVA_HOME environment variable is not set
+
+:end

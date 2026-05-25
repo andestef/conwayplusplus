@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:49a3890fa258a2b1841fd393851137ef6ff8cf64df9f75e57c6e7a57dad83d98
-size 537
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>launch4j</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.m2e.core.maven2Builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

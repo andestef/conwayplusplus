@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:08af1d4d9b6e276c078f333c9ffc65052b67e63c1c84b621cc1f6b64f53ba236
-size 384
+package net.sf.launch4j.config;
+
+import java.util.Comparator;
+
+public interface Describable {
+
+    String getDescription();
+
+    int getIndex();
+
+    class DescribableComparator implements Comparator<Describable> {
+
+        @Override
+        public int compare(Describable o1, Describable o2) {
+            return o1.getDescription().compareTo(o2.getDescription());
+        }
+    }
+}
