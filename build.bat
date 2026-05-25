@@ -1,5 +1,6 @@
 ::remove next line to debug this batch file
 @echo off
+echo Hello from the Conway Plus Plus builder!
 cd src
 "../build/jdk/bin/javac" Conwayplusplus.java --module-path ../build/javafx/lib --add-modules javafx.controls -d ../build
 cd ../build
