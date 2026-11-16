@@ -225,7 +225,7 @@ public class Conwayplusplus extends Application {
     public void start(Stage stage) {
         cellsizeX = 20;
         cellsizeY = 20;
-        stage.setTitle("Conway");
+        stage.setTitle("Conway++");
         GridPane root = new GridPane();
         sizeX = 25;
         sizeY = 25;
