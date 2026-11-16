@@ -1,3 +1,1 @@
-build/* filter=lfs diff=lfs merge=lfs -text
-build/jdk/** filter=lfs diff=lfs merge=lfs -text
-build/javafx/** filter=lfs diff=lfs merge=lfs -text
+build/** filter=lfs diff=lfs merge=lfs -text
